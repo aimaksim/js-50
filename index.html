@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="title" content="bootstrap">
+	<meta name="description" content="Site Description">
+	<meta name="keywords" content="blog">
+	<meta name="robots" content="index,follow">
+	<meta name="language" content="English">
+	<meta name="revisit-after" content="7 days">
+	<meta name="author" content="MD Ariful Islam">
+	<title>js by Ariful</title>
+	<link rel="icon" href="images/md-Ariful-islam.png">
+<!-- font awesome -->
+
+<!--css links-->
+	<link rel="stylesheet" href="css/bootstrap-icons.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+    <!-- change text -->
+    <div><hr></div>
+    <h2> Change text</h2>
+    <button type="button" onclick="changeText()">Click me</button>
+    <p id="cText">hello!</p>
+
+    <!-- fontsize -->
+    <div><hr></div>
+    <h2> Font size</h2>
+    <button type="button" onclick="fontSize()">click me </button>
+    <p id="fSize">font size</p>
+    
+    <!-- color change -->
+    <div><hr></div>
+    <h2> Color</h2>
+    <button type="button" onclick="color()">click me</button>
+    <p id="color">Bangladesh</p>
+
+    <!-- light off & on -->
+    <div><hr></div>
+    <h2> light off and on</h2>
+    <img id="light" src="images/off.gif">
+    <button class="btn" onclick="onLight()" type="button">On</button>
+    <button class="btn" type="button" onclick="offLight()">Off</button>
+    
+    <!-- alert -->
+    <div><hr></div>
+    <button onclick="myAlert()">Alert</button>
+
+    <!-- alert function -->
+    <div><hr></div>
+    <h2> Alert function</h2>
+    <button type="button" onclick="alertShow()">alert</button>
+    <p>This is alert function</p>
+
+    <!-- dropdown -->
+    <div><hr></div>
+    <h2> Display show and hide</h2>
+    <button type="button" onclick="displayShow()">Display</button>
+    <button type="button" onclick="displayHide()">Hide</button>
+    <h3 id="tHide">yo</h3>
+
+    <!-- show date -->
+    <div><hr></div>
+    <h2> Show date</h2>
+    <p id="s_date"></p>
+    <button type="button" onclick="showDate()">show date</button>
+    
+    <!-- switch -->
+    <div><hr></div>
+    <h2>Current day</h2>
+    <button onclick="mySwitch()">switch</button>
+    <h4 id="c"></h4>
+    
+    <!-- array -->
+    <div><hr></div>
+    <h2>Array</h2>
+    <button onclick="allNames()">array</button>
+    <p id="a"></p>
+
+    <!-- show and hide -->
+    <div><hr></div>
+    <h2> Show and Hide</h2>
+    <button type="button" onclick="tShow()">show</button>
+    <button type="button" onclick="tHide()">hide</button>
+    <p id="t">Ipsum consetetur ipsum.Sadipscing gubergren aliquyam eirmod labore sed et, tempor amet vero eirmod rebum, tempor at sea sanctus et at. Diam sit.</p>
+
+    <!-- border bottom -->
+    <div><hr></div>
+    <h2>Border botom</h2>
+    <button type="button" onclick="bBottom()">border-bottom</button>
+    <p style="padding-bottom: 10px;" id="border-bottom">HELLO</p>
+
+    <!-- width & height -->
+    <div><hr></div>
+    <h2>Width & Height</h2>
+    <button type="button" onclick="myDiv()">width & height</button>
+    <div id="div1"></div>
+
+    <!-- variable -->
+    <div><hr></div>
+    <h2>Variable</h2>
+    <button onclick="myVariable()">Variable</button>
+    <p id="var"></p>
+
+    <!-- repeat -->
+    <div><hr></div>
+    <h2>Repeat</h2>
+    <button onclick="myRepeat()">repeat</button>
+    <p id="repeat"></p>
+
+    <!-- total result -->
+    <div><hr></div>
+    <h2> Total result</h2>
+    <button type="button" onclick="result()">Result</button>
+    32 + 17 = <span id="result"></span>
+    
+    <!-- Addition -->
+    <div><hr></div>
+    <h2>Addition 15 + 26 = </h2>
+    <button onclick="myAddition()">Result</button>
+    <p id="var_addi"></p>
+    
+    <!-- Multiplication  -->
+    <div><hr></div>
+    <h2>Multiplication 5 * 7 = </h2>
+    <button onclick="myMultiplication()">Result</button>
+    <p id="var_multi"></p>
+
+    <!-- division  -->
+    <div><hr></div>
+    <h2>Division 63/7</h2>
+    <button onclick="division()">result</button>
+    <p id="division"></p>
+
+    <!-- remainder  -->
+    <div><hr></div>
+    <h2>Remainder 70 % 12</h2>
+    <button onclick="remainder()">result</button>
+    <p id="remainder"></p>
+
+    <!-- exponentiation  -->
+    <div><hr></div>
+    <h2>Exponentiation: ** | var d = 6; var e = d**6;</h2>
+    <button onclick="exponentiation()">result</button>
+    <p id="exponentiation"></p>
+
+    <!-- Pre increment ++  -->
+    <div><hr></div>
+    <h2>Pre increment ++ | var aa=5; var bb = ++aa;</h2>
+    <button onclick="increment()">Pre increment</button>
+    <p id="increment"></p>
+    
+    <!-- Post increment ++  -->
+    <div><hr></div>
+    <h2>Post increment ++ | var cc = 7; var dd = cc++;</h2>
+    <button onclick="pIncrement()">Post increment</button>
+    <p id="pIncrement"></p>
+
+    <!-- Pre decrement  -->
+    <div><hr></div>
+    <h2>Pre decrement | decrement1 = 15; decrement2 = --decrement1;</h2>
+    <button onclick="preDecrement()">result</button>
+    <p id="pre_decrement"></p>
+    
+    <!-- Post decrement  -->
+    <div><hr></div>
+    <h2>Post decrement | decrement3 = 15; decrement4 = --decrement1;</h2>
+    <button onclick="postDecrement()">result</button>
+    <p id="post_decrement"></p>
+
+    <!-- increment +  -->
+    <div><hr></div>
+    <h2>Increment += let number1 = 15; number1 += 5;</h2>
+    <button onclick="mydemo1()">result</button>
+    <p id="demo1"></p>
+
+    <!-- Decrement -  -->
+    <div><hr></div>
+    <h2>Decrement -= let number2 = 15; number2 -= 5;</h2>
+    <button onclick="mydemo2()">result</button>
+    <p id="demo2"></p>
+
+    <!-- Multiplication * -->
+    <div><hr></div>
+    <h2>Multiplication *= let number3 = 15; number3 *= 5;</h2>
+    <button onclick="mydemo3()">result</button>
+    <p id="demo3"></p>
+
+    <!-- Division / -->
+    <div><hr></div>
+    <h2>Division /= let number4 = 15; number4 /= 5;</h2>
+    <button onclick="mydemo5()">result</button>
+    <p id="demo5"></p>
+
+    <!-- Modulus * -->
+    <div><hr></div>
+    <h2>Modulus *= let number5 = 15; number5 %= 5;</h2>
+    <button onclick="mydemo4()">result</button>
+    <p id="demo4"></p>
+<!--css links-->
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html> 
